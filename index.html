@@ -14,28 +14,36 @@
 <body>
     
     <main>
-        <h1>
-            Inserisci i tuoi dati per acquistare il biglietto
-        </h1>
-        <form action="">
-            <div>
-                <label for="distance">Inserisci i chilometri da percorrere</label>
-                <input type="number" name="distance" id="inputDistance">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <img src="" alt="">
+                    <h1 class="py-5 fw-bold" >
+                        Inserisci i tuoi dati per acquistare il biglietto
+                    </h1>
+
+                    <form>
+                        <div class="mb-3">
+                          <label for="distance" class="form-label">Inserisci i chilometri da percorrere</label>
+                          <input type="number" class="form-control" id="inputDistance">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Inserisci l'età del passeggero</label>
+                          <input type="number" class="form-control" id="inputAge">
+                        </div>
+                        <button type="button" id="button" class="btn btn-primary">Invia dati</button>
+                    </form>
+
+                    <p id="output" class="py-4 fw-bold text-decoration-underline">
+
+                    </p>
+
+                </div>
             </div>
-            <div>
-                <label for="age">Inserisci l'età del passeggero</label>
-                <input type="number" name="age" id="inputAge">  
-            </div>
-            
-            <button type="button" id="button">Invia dati</button>
-        </form>
 
-        <p id="output">
-
-        </p>
-
+        </div>
+        
     </main>
-
 
     <script src="./js/script.js"></script>
 </body>

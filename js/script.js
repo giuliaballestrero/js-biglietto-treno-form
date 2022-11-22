@@ -22,7 +22,7 @@ button.addEventListener('click', function() {
     ticketPrice = ticketPrice - (ticketPrice * 33.5 / 100);
 
 //scrivo il prezzo finale sul documento
-    document.getElementById('output') .innerHTML = 'Il prezzo del tuo biglietto è: ' + ticketPrice.toFixed(2) + '&euro;';
+    document.getElementById('output') .innerHTML = 'Il prezzo del tuo biglietto è: ' + ticketPrice.toFixed(2) + ' &euro;';
     console.log(ticketPrice);
 })
 
